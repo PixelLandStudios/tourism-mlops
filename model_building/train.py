@@ -98,7 +98,7 @@ def train():
             mlflow.log_metric(metric_name, score)
 
         # 6. Save model pipeline locally
-        model_path = "tourism_project/model_building/best_model.joblib"
+        model_path = "model_building/best_model.joblib"
         joblib.dump(best_pipeline, model_path)
         print(f"\nModel successfully saved locally at: {model_path}")
 
