@@ -56,4 +56,4 @@ jobs:
       - name: Push files to Frontend Hugging Face Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: huggingface-cli upload malawn/tourism-package-app deployment/ . --repo-type space
+        run: hf upload malawn/tourism-package-app deployment/ . --repo-type space
